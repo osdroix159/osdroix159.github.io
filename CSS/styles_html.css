@@ -1,0 +1,147 @@
+
+.body-osdroix{
+    background: url(https://i.pinimg.com/originals/e4/a7/3c/e4a73c86ccae59ea259c75121ba6cb84.gif)
+      no-repeat center center fixed;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      }
+
+.img{
+     width:70%;
+     height:70%;
+     border-radius:160px;
+     border:10px solid #00C7FF;
+}
+.div-o{
+  padding:2%;
+  margin-left:10%;
+}
+.a {
+  color:#282923;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius:5px;
+  background:#E5E5E5;
+  border-width: 1px;
+  border-style: solid; 
+}
+
+.party{
+  float: right;
+	padding:50px;
+  display: flex;
+  }
+.party-b{
+  float: right;
+  padding:2px;
+  display: flex;
+  }
+  #b{
+    margin-left:20px;
+  }
+.overlay {    
+  background: url(https://i.pinimg.com/originals/e4/a7/3c/e4a73c86ccae59ea259c75121ba6cb84.gif)
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height:80hv;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.popup {
+  background:#E5E5E5;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: left;
+  transition: .8s ease all;
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  transition: .3s ease all;
+  color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+  color: #000;
+}
+
+.popup h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+
+
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active { transform: scale(1); opacity: 3; }
+/* .popup.active input { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active h1 { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active h2 { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active h3 { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active h5 { animation: entradaSubtitulo .5s ease .5s forwards; }
+.popup.active img { animation: entradaSubtitulo .5s ease 0.5s forwards; }
+.popup.active button { animation: entradaSubtitulo .5s ease .5s forwards; } */
+
+@keyframes entradaTitulo {
+  from {
+    opacity: 1;
+    transform: translateY(-25px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entradaSubtitulo {
+  from {
+    opacity: 1;
+    transform: translateY(25px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entradaInputs {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}

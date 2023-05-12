@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="Art Sign Up Form Responsive Widget, 
+              Audio and Video players, Login Form Web Template, Flat Pricing 
+              Tables, Flat Drop-Downs, Sign-Up Web Templates, 
+	Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone 
+        Compatible Web Template, Free Web Designs for Nokia, Samsung, 
+        LG, Sony Ericsson, Motorola Web Design"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+    <link href="CSS/styles_html.css" rel="stylesheet" type="text/css" />
+	<title>
+		Encryp
+	</title>
+</head>
+<body class="body-osdroix">
+	<article class="a">
+		<div class="party">
+			<div>
+				<center>
+					<h1>Bienvenidos</h1>
+					<hr>
+					<h1>Proyectos - ONE</h1>
+						<button type="button" id="btn-abrir-popup" class="btn btn-dark">
+							Encriptador
+						</button>
+				</center>
+			</div>
+			<div class="div-o">
+				<center>
+					<img class="img" src="IMG/OSDROIX.jpg" />
+					<h1>Osdroix</h1> 
+				</center>
+			</div>
+		</div>
+	</article>	
+
+  <div class="overlay" id="overlay">
+	  <div class="popup" id="popup">
+	      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">cerrar<i class="fas fa-times"></i></a>
+	  	  <center>
+			  <h1>Encriptador</h1>
+			  <label for="texto">Texto:</label>
+			  <input class="form-control" type="text" id="texto" />
+			  <p id="advertencias"></p>
+			  <p>Seleccione una opción:</p>
+			  <input type="radio" id="encriptar" name="accion" class="form-control" value="encriptar" checked>
+			  <label for="encriptar">Encriptar</label>
+			  <input type="radio" id="desencriptar" name="accion" value="desencriptar">
+			  <label for="desencriptar">Desencriptar</label>
+			  <button class="btn btn-dark" onclick="accion()">Ejecutar</button>
+			  <p>Resultado:</p>
+			  <textarea class="form-control" id="resultado" rows="3" cols="30"></textarea>
+	  	  </center>  
+	  </div>
+ </div>
+  <script src="JS/ventanas.js"></script>
+</body>
+</html>
